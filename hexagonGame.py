@@ -190,8 +190,8 @@ def main():
                 while True:
                     # Prompt edge from user
                     print("\nPlayer move\n")
-                    start = int(input("  Line From: "))
-                    end = int(input("  To: "))
+                    start = int(input("Line From: "))
+                    end = int(input("To: "))
 
                     # Check if input in range [1;6]
                     while (start > 6 or start < 1) or (end > 6 or end < 1):
@@ -285,5 +285,5 @@ def main():
 
                 # Print current state of hexagon
                 print(game.hexagon)
-                
-main()
+if __name__ == '__main__':
+    main()
